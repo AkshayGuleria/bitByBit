@@ -1,11 +1,29 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from datetime import date
+
+posts = [
+    {
+        'author': 'Akshay Guleria',
+        'title': 'First Dummy post',
+        'content': 'First row',
+        'date_posted': date(2019, 2, 9)
+    },
+    {
+        'author': 'Divya Narang',
+        'title': 'Second Dummy post',
+        'content': 'Second row',
+        'date_posted': date(2019, 2, 10)
+    }
+]
 
 
 # Create your views here.
 def home(request):
-    return HttpResponse('<h1>Gnillib Home</h1>')
+    context = {
+        'posts': posts
+    }
+    return render(request, 'gnillib/index.html', context)
+
 
 def contact(request):
-    return HttpResponse('<h1>Gnillib Contact</h1> \n '
-                        '<h2>Akshay Guleria</h2>')
+    return render(request, 'gnillib/contact.html')
