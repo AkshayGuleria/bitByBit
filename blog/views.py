@@ -3,13 +3,13 @@ from datetime import date
 
 posts = [
     {
-        'author': 'Akshay Guleria',
+        'author': 'Messanger of God',
         'title': 'First Dummy post',
         'content': 'First row',
         'date_posted': date(2019, 2, 9)
     },
     {
-        'author': 'Divya Narang',
+        'author': 'Babaji derey waley',
         'title': 'Second Dummy post',
         'content': 'Second row',
         'date_posted': date(2019, 2, 10)
