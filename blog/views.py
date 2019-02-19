@@ -22,8 +22,8 @@ def home(request):
     context = {
         'posts': posts
     }
-    return render(request, 'gnillib/index.html', context)
+    return render(request, 'blog/index.html', context)
 
 
 def contact(request):
-    return render(request, 'gnillib/contact.html')
+    return render(request, 'blog/contact.html')
