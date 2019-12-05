@@ -1,4 +1,4 @@
-Django==2.1.12
+Django==2.1.11
 django-markdown-deux==1.0.5
 markdown2==2.3.6
 psycopg2==2.7.5
